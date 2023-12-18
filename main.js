@@ -13,6 +13,7 @@ function clearInputs(){
 function add(){
     if(document.getElementById("n").value != null){
         szamok.push(document.getElementById("n").value);
+        clearInputs();
+        document.getElementById("output").textContent += `${szamok[szamok.length-1]} `;
     }
-    clearInputs();
 }
